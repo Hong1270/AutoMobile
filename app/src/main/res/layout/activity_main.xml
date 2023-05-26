@@ -18,11 +18,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/btn_camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Photo"
-        />
+        android:text="Photo" />
+    <Button
+        android:id="@+id/btn_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="갤러리" />
 
     <ImageView
         android:id="@+id/image_View"

@@ -7,9 +7,14 @@ android {
     namespace 'com.example.automobile'
     compileSdk 33
 
+    // Specify tflite file should not be compressed for the app apk
+    aaptOptions {
+        noCompress "tflite"
+    }
+
     defaultConfig {
         applicationId "com.example.automobile"
-        minSdk 16
+        minSdk 23
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -45,4 +50,7 @@ dependencies {
     def cmaerax_version = "1.0.0-alpha05"
     implementation "androidx.camera:camera-core:1.2.1"
     implementation "androidx.camera:camera-camera2:1.2.1"
+
+    // Import tflite dependencies
+    implementation 'org.tensorflow:tensorflow-lite-support:0.4.0'
 }
